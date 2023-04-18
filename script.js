@@ -59,6 +59,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Save a new book or update an existing one
 
+  // function saveBook() {
+  //   const book = {
+  //     id: Date.now(),
+  //     title: document.getElementById("book-name").value,
+  //     author: document.getElementById("book-author").value,
+  //     category: document.getElementById("book-category").value,
+  //     year: document.getElementById("book-year").value,
+  //     price: document.getElementById("book-price").value,
+  //     image: document.getElementById("book-image").value,
+  //   };
+
+  //   if (currentBookIndex === -1) {
+  //     books.push(book);
+  //   } else {
+  //     books[currentBookIndex] = book;
+  //     currentBookIndex = -1;
+  //   }
+
+  //   localStorage.setItem("books", JSON.stringify(books));
+  //   modal.style.display = "none";
+  //   updateBooks(); // Call updateBooks() instead of renderBooks()
+  // }
   function saveBook() {
     const book = {
       id: Date.now(),
@@ -78,9 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     localStorage.setItem("books", JSON.stringify(books));
-    modal.style.display = "none";
-    updateBooks(); // Call updateBooks() instead of renderBooks()
+    // modal.style.display = "none"; // Remove or comment out this line
+    updateBooks();
   }
+
   // Open the modal to edit a book
 
   function editBook(index) {
