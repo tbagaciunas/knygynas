@@ -1,0 +1,123 @@
+img {
+
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+body {
+
+    background-color: rgb(146, 131, 131);
+    color: white;
+display: block;
+    
+}
+
+h1 {
+
+    text-align: center;
+}
+
+#add-book-form {
+
+    display: flex;
+    justify-content: right;
+    align-content: flex-end;
+    height: fit-content;
+    font-size: 15px;
+    vertical-align:middle;
+}
+
+section {
+
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#author-filter {
+
+    background-color: bisque;
+}
+
+#category-filter {
+
+    background-color: bisque;
+}
+
+.modal-content {
+
+    border: 2px solid black;
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+
+
+ input {
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        padding: 1em;
+        background-color: #ccc;
+        box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+        transition: 300ms ease-in-out;
+        margin: 10px;
+        padding: 10px;
+      }
+      
+      input:focus {
+        background-color: white;
+        transform: scale(1.05);
+        box-shadow: 13px 13px 100px #969696,
+                   -13px -13px 100px #ffffff;
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   button:disabled {
+    pointer-events: none;
+   }
+   
+   button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+   #book-list {
+
+    display: inline-block
+   }

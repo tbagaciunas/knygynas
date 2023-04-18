@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Books List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Books List</h1>
+    </header>
+    <main>
+      <form id="add-book-form">
+        <input
+          type="text"
+          id="search-field"
+          name="search"
+          placeholder="search for books..."
+        />
+      </form>
+      <section class="filters">
+        <h2>Filters</h2>
+        <label for="author-filter">Author:</label>
+        <select id="author-filter" name="author">
+          <option value="">All authors</option>
+        </select>
+        <label for="category-filter">Category:</label>
+        <select id="category-filter" name="category">
+          <option value="">All categories</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-fiction">Non-fiction</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Detective">Detective</option>
+          <option value="Biography">Biography</option>
+          <option value="Poem">Poem</option>
+          <option value="Science fiction">Science fiction</option>
+        </select>
+      </section>
+      <section>
+        <h2>Sort By</h2>
+        <label for="price-sort">Price:</label>
+        <select id="price-sort" name="price">
+          <option value="low-to-high">Lowest to Highest</option>
+          <option value="high-to-low">Highest to Lowest</option>
+        </select>
+      </section>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form>
+            <input
+              type="text"
+              id="book-name"
+              name="book-name"
+              placeholder="Book title"
+            />
+
+            <input
+              type="text"
+              id="book-author"
+              name="book-author"
+              placeholder="Author"
+            />
+
+            <input
+              type="text"
+              id="book-year"
+              name="book-year"
+              placeholder="Book year"
+            />
+
+            <input
+              type="text"
+              id="book-price"
+              name="book-price"
+              placeholder="Price"
+            />
+
+            <input
+              type="text"
+              id="book-image"
+              name="book-image"
+              placeholder="Image-Url"
+            />
+            <label for="book-category">Category:</label>
+            <select id="book-category" name="book-category">
+              <option value="Fiction">Fiction</option>
+              <option value="Non-fiction">Non-fiction</option>
+              <option value="Mystery">Mystery</option>
+              <option value="Detective">Detective</option>
+              <option value="Biography">Biography</option>
+              <option value="Poem">Poem</option>
+              <option value="Science fiction">Science fiction</option>
+            </select>
+            <button type="button" id="save-btn">Save</button>
+          </form>
+        </div>
+      </div>
+      <section id="book-list">
+        <h2>Book List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Category</th>
+              <th>Year</th>
+              <th>Price</th>
+              <th>Image</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- The book items will be added here dynamically -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- The modal for adding/editing a book -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
