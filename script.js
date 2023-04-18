@@ -174,10 +174,10 @@ document.addEventListener("DOMContentLoaded", () => {
   categoryFilter.addEventListener("change", updateBooks);
   priceSort.addEventListener("change", updateBooks);
 
-  closeModal.addEventListener("click", () => {
-    modal.style.display = "none";
-    currentBookIndex = -1;
-  });
+  // closeModal.addEventListener("click", () => {
+  //   modal.style.display = "none";
+  //   currentBookIndex = -1;
+  // });
 
   saveBtn.addEventListener("click", saveBook);
 
