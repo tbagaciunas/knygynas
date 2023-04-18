@@ -1,21 +1,23 @@
 img {
 
     width: 100px;
-    height: 100px;
-    margin: 50px;
+    height: 200px;
+   margin: 10px;
 }
 
 body {
 
-    background-color: rgb(146, 131, 131);
+    background-color: rgb(95, 65, 65);
     color: white;
 display: block;
+font-family: 'Ubuntu', sans-serif;
     
 }
 
-h1 {
+h1,h2 {
 
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #add-book-form {
@@ -51,6 +53,7 @@ section {
     border: 2px solid black;
     margin-bottom: 30px;
     height: 100px;
+    margin: 10px;
 }
 
 
@@ -80,25 +83,29 @@ button {
     border: 0.125em solid #1A1A1A;
     border-radius: 0.9375em;
     box-sizing: border-box;
-    color: #3B3B3B;
+    color: #f7eaea;
     cursor: pointer;
     display: inline-block;
     font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 16px;
+    font-size: 13px;
+    font-style: normal;
     font-weight: 600;
-    line-height: normal;
-    margin: 0;
-    min-height: 3.75em;
-    min-width: 0;
+    /* line-height: normal; */
+    margin: 5;
+    /* min-height: 3.75em;
+    min-width: 0; */
     outline: none;
-    padding: 1em 2.3em;
+    /* padding: 1em 2.3em; */
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    height: 30px;
+    width: 80px;
     will-change: transform;
+    text-align: center;
    }
    
    button:disabled {
@@ -119,5 +126,33 @@ button {
 
    #book-list {
 
-    display: inline-block
+    margin: 10px;
+    text-align: center;
+    background-color: #5a4b4b;
+
+   }
+
+   td,th {
+
+    border: 2px solid black;
+    /* border-radius: 10px; */
+    
+    margin: 10px;
+    padding: 10px;
+    width: max-content;
+    height: 50px;
+    color: rgb(255, 244, 244);
+    background-color: #635959;
+   }
+
+   table {
+
+    width: 100%;
+  text-align: center;
+   }
+
+   #price-sort {
+
+    border: 2px solid black;
+    border-radius: 5px;
    }

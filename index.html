@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <title>Books List</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -20,10 +26,19 @@
       </form>
       <section class="filters">
         <h2>Filters</h2>
-        <label for="author-filter">Author:</label>
+        <!-- <label for="author-filter">Author:</label>
         <select id="author-filter" name="author">
           <option value="">All authors</option>
-        </select>
+        </select> -->
+
+        <label for="author-filter">Author:</label>
+        <input
+          type="text"
+          id="author-filter"
+          name="author"
+          placeholder="Author name"
+        />
+
         <label for="category-filter">Category:</label>
         <select id="category-filter" name="category">
           <option value="">All categories</option>
