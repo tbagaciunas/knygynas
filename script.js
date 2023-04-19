@@ -59,28 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Save a new book or update an existing one
 
-  // function saveBook() {
-  //   const book = {
-  //     id: Date.now(),
-  //     title: document.getElementById("book-name").value,
-  //     author: document.getElementById("book-author").value,
-  //     category: document.getElementById("book-category").value,
-  //     year: document.getElementById("book-year").value,
-  //     price: document.getElementById("book-price").value,
-  //     image: document.getElementById("book-image").value,
-  //   };
-
-  //   if (currentBookIndex === -1) {
-  //     books.push(book);
-  //   } else {
-  //     books[currentBookIndex] = book;
-  //     currentBookIndex = -1;
-  //   }
-
-  //   localStorage.setItem("books", JSON.stringify(books));
-  //   modal.style.display = "none";
-  //   updateBooks(); // Call updateBooks() instead of renderBooks()
-  // }
   function saveBook() {
     const book = {
       id: Date.now(),
@@ -100,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     localStorage.setItem("books", JSON.stringify(books));
-    // modal.style.display = "none"; // Remove or comment out this line
+    // modal.style.display = "none";
     updateBooks();
   }
 
@@ -125,12 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
   function deleteBook(index) {
     books.splice(index, 1);
     localStorage.setItem("books", JSON.stringify(books));
-    updateBooks(); // Call updateBooks() instead of renderBooks()
+    updateBooks();
   }
 
   function filterBooks() {
     const search = searchField.value.toLowerCase();
-    const author = authorFilter.value.toLowerCase(); // change this line to get the value from input
+    const author = authorFilter.value.toLowerCase();
     const category = categoryFilter.value;
 
     return books.filter(
@@ -138,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
         (book.title.toLowerCase().includes(search) ||
           book.author.toLowerCase().includes(search) ||
           book.category.toLowerCase().includes(search)) &&
-        (author === "" || book.author.toLowerCase().includes(author)) && // change this line to compare the input value with the book author
+        (author === "" || book.author.toLowerCase().includes(author)) &&
         (category === "" || book.category === category)
     );
   }
